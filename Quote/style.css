@@ -1,84 +1,123 @@
-body{
-  margin: 0;
-  min-height: 100vh;
-  background-color: #DFDBE5;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23474649' fill-opacity='0.22' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-font-weight: 700;
-display: flex;
-align-items: center;
-justify-content: center;
-font-family: 'Akaya Telivigala', cursive;
-text-align: center;
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23474649' fill-opacity='0.22' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Akaya Telivigala', cursive;
+    text-align: center;
+    flex-direction: column;
 }
+
 html {
-  box-sizing: border-box;
-}
-.quote-container{
-  /* width: auto; */
-  min-width: 700px;
-  max-width: 900px;
-  padding: 20px 30px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, .4);
-  box-shadow: 0px 10px 10px 10px rgba(0,0,0, .2);
-
-}
-.text{
-  font-size: 2rem;
-}
-#q1{
-  font-size: 4rem;
-}
-.author{
-  margin: 20px;
-  font-size: 2rem;
-  font-style: italic ;
-  /* font-weight: 200; */
-}.button{
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.twitter{
-  width: 70px;
-  height: 30px;
-  background-color: gray;
-  border-radius: 7px;
-  box-shadow:  0px 2px 3px 3px rgba(0,0,0, .9);
-}
-.new-quote{
-  background-color: gray;
-  border-radius: 7px;
-  background-color: gray;
-  height: 30px;
-  font-size: 14px;
-  box-shadow:  0px 2px 3px 3px rgba(0,0,0, .9);
-}
-.new-quote:hover ,.twitter:hover , .twitter i:hover{
-  color: gray;
-  background-color: white;
-}
-.twitter i{
-  /* height: 30px; */
-  font-size: 20px;
-  color: white;
-  border: 2px solid gray;
-}
-@media screen and (max-width:1000px ){
-  .quote-container{
-    margin: auto 10px;
-    min-width: 500px;
-
-
-  }
+.quote-container {
+    /* width: auto; */
+    min-width: 700px;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .4);
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, .2);
 }
 
-@media screen and (max-width:620px ){
-  .quote-container{
-    margin: auto 30px;
-    min-width: 100px;
+.text {
+    font-size: 2rem;
+}
 
+#q1 {
+    font-size: 4rem;
+}
 
-  }
+.author {
+    margin: 20px;
+    font-size: 2rem;
+    font-style: italic;
+    /* font-weight: 200; */
+}
+
+.button {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.twitter {
+    width: 75px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 7px;
+    box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, .9);
+}
+
+.twitter i {
+    width: 70px;
+    line-height: 25px;
+    border-radius: 10px;
+    /* border-color: transparent; */
+}
+
+.new-quote {
+    background-color: gray;
+    border-radius: 7px;
+    background-color: gray;
+    height: 30px;
+    font-size: 14px;
+    box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, .9);
+}
+
+.new-quote:hover,
+.twitter:hover,
+.twitter i:hover {
+    color: gray;
+    background-color: white;
+    border-color: white;
+}
+
+.twitter i {
+    /* height: 30px; */
+    font-size: 20px;
+    color: white;
+    border: 2px solid gray;
+}
+
+@media screen and (max-width:1000px) {
+    .quote-container {
+        margin: auto 10px;
+        min-width: 500px;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .quote-container {
+        margin: auto 30px;
+        min-width: 100px;
+    }
+}
+
+.by {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    background-color: rgba(255, 255, 255, .4);
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, .2);
+    padding: 6px 10px;
+    border-radius: 5PX;
+}
+
+.by1 {
+    padding: 0px 10px;
+}
+
+.by i {
+    color: black;
+}
+
+.by i:hover {
+    color: rgb(65, 55, 55);
 }

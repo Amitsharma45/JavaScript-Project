@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote Generator</title>
     <link rel="icon" type="image/jpg" href="aa.jpg">
-    
+
     <!-- Old Favicon - Grab Icon From Google (Might be unsupported in the future) -->
     <!-- <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=jacinto.design"> -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="quote-container" id="quote">
         <div class="quote">
@@ -28,13 +30,21 @@
         </div>
         <div class="button">
             <!-- <span>twite</span> -->
-            <button class="twitter" id="twiteer-b" onclick="tw()">
+            <a class="twitter" id="twiteer-b" onclick="tw()">
                 <i class="fab fa-twitter"></i>
-            </button>
+            </a>
             <button class="new-quote" onclick='newquote()'>New Quote</button>
         </div>
     </div>
-    <!-- Script -->
+
+
+    <div class="by">
+        <a href="https://github.com/Amitsharma45/JavaScript-Project/tree/master/Quote" target="_blank"><i class="fab fa-github"></i></a>
+        <div class="by1">Make By. Amit Sharma</div>
+        <a href="https://www.linkedin.com/in/amit-sharma-047434177/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <!-- Script-->
     <script src="script.js"></script>
 </body>
+
 </html>

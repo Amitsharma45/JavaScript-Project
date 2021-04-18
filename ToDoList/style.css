@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+body{
+    background-image: linear-gradient(to bottom right,#22D4F8,#0C3F8A);
+    /* height: 100%; */
+}
+html{
+    min-height: 100%;
+}
+.heading{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 6rem;
+    margin: 1rem;
+    color: #EEEE19;
+}
+.add{
+    display: flex;
+    /* align-items: center; */
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    
+
+}
+#input{
+    
+    height: 35px;
+    min-width: 350px;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+    color:whitesmoke ;
+    margin: 5px;
+}
+#add{
+    height: 35px;
+    width: 75px;
+    margin: 5px;
+    color: #EEEE19;
+    font-size: larger;
+    background-color: #C70039;
+    border: 2px soid black;
+    border-radius: 10px;
+    /* box-shadow:  2px 2px #cf2152 ; */
+
+    /* text-align: center; */
+}
+#add:hover,.del:hover{
+    color: #C70039;
+    background-color: #EEEE19;
+    cursor: pointer;
+}
+.container{
+    
+    display: flex ;
+    border: 2px darkcyan solid;
+    margin:20px 10% ;
+    flex-wrap: wrap;
+}
+.node{
+    /* display: inline-block; */
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    border:  2px solid black;
+    padding: 10px;
+    border-radius: 7px;
+    /* position: relative; */
+    /* overflow: hidden; */
+    
+}
+.del{
+    position: relative;
+    left:  65px;
+    margin-top: 7px;
+    padding: 3px;
+    font-size: 18px;
+    border: #C70039 2px solid;
+    background-color: #C70039;
+    color: #EEEE19;
+    border-radius: 10px;
+    
+}

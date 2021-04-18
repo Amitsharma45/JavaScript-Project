@@ -102,7 +102,7 @@ html {
 
 .by {
     position: absolute;
-    bottom: 20px;
+    bottom: 1%;
     display: flex;
     background-color: rgba(255, 255, 255, .4);
     box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, .2);
